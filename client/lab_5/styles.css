@@ -18,10 +18,70 @@ body {
   flex-wrap: wrap;
 }
 
+.container {
+ 
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+ 
+  max-width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
 .wrapper {
   display: flex;
+  background-color: whitesmoke;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 3px;
 }
-.container {
-  max-width: 960px;
-  margin-top: 25px;
+.form-row {
+  display: flex;
+  flex-direction : column;
+  justify-content: space-around;
+  gap: 5px;
+}
+.form-row > label {
+  padding: .5em 1em .5em 0;
+}
+.form-row > input {
+  flex: 1;
+}
+.form-row > input,
+.form-row > button {
+  padding: .5em;
+}
+
+.food-form-row{
+  display: flex;
+
+  gap: 5px;
+  border-style: none;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #5995DA;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+
+  
+
+}
+
+.form-row button:hover {
+  background-color: #76AEED;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
 }
